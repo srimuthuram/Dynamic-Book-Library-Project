@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    background: linear-gradient(to right,brown,grey);
+    padding: 10px;
+    color: black;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+.book-container{
+    padding: 15px;
+    background: linear-gradient(to right,black,brown);
+    color: white;
+    border-radius: 15px;
+    width: 250px;
+    margin: 30px;
+    vertical-align: top;
+}
+.book-container h2{
+    color: red;
+}
+.book-container h5{
+    color: red;
+}
+.book-container button{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+}
+.addbutton{
+    background-color: red;
+    color:whitesmoke;
+    border-radius: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.popupbox{
+    background: linear-gradient(to right,black,brown);
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    position: absolute;
+    left:50%;
+    top: 20%;
+    transform: translate(-50%);
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+
+}
+.popupbox h2{
+    color: red;
+}
+.popupbox input{
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: white;
+    
+}
+.popupbox textarea{
+    width: 100%;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 3px;
+    border: grey solid 2px;
+    border-radius: 10px;
+    color: white;
+}
+.popupbox button{
+    padding: 10px;
+    border-radius: 5px;
+    
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px){
+
+    .book-container{
+        width: 100%;
+    }
+
+    .popupbox{
+        width: 95%;
+        top: 10%;
+    }
+
+    .addbutton{
+        padding: 15px;
+        font-size: 30px;
+    }
+    .popupbox{
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 95%;
+    padding: 20px;
+}
+}
